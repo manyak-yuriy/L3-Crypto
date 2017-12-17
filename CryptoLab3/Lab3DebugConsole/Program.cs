@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using NLog;
@@ -12,12 +13,23 @@ namespace Lab3DebugConsole
     {
         private static Logger _logger = LogManager.GetCurrentClassLogger();
 
+        static void LogGeneratorPerfomace()
+        {
+            _logger.Info("Start getting big random prime numbers...");
+
+            BigInteger bigRandomPrime = BigInteger.Zero;
+
+            for (int i = 0; i < 20; i++)
+            {
+                bigRandomPrime = BigIntegerRandom.GetBigRandomPrime();
+
+                _logger.Info("Big random prime number: {0}", bigRandomPrime);
+            }
+        }
+
         static void Main(string[] args)
         {
-            var bigRandomPrime = BigIntegerRandom.GetBigRandomPrime();
-
-
-            _logger.Info("Big random prime number: {0}", bigRandomPrime);
+            LogGeneratorPerfomace();
 
             Console.ReadKey();
         }
