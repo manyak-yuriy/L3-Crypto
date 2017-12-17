@@ -13,14 +13,14 @@ namespace RSALab.Implementation.Converters
         {
             var toBytes = number.ToByteArray();
 
-            string str = Encoding.Unicode.GetString(toBytes);
+            string str = Encoding.BigEndianUnicode.GetString(toBytes);
 
             return str;
         }
 
         public static BigInteger StringToBigIntegerEquivalent(string str)
         {
-            byte[] toBytes = Encoding.Unicode.GetBytes(str);
+            byte[] toBytes = Encoding.BigEndianUnicode.GetBytes(str);
 
             var number = new BigInteger(toBytes);
 

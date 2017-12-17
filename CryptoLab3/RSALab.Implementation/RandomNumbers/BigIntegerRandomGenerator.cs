@@ -8,7 +8,7 @@ namespace RSALab.Implementation
     {
         private const int DefaultBitness = 256;
 
-        private const int Certainty = 5;
+        private const int Certainty = 7;
 
         private static Logger _logger = LogManager.GetCurrentClassLogger();
 

@@ -33,7 +33,7 @@ namespace RSALab.DebugConsole
 
         static void LogConversion()
         {
-            var originalString = "I want to see this! Я тут уже, Ёпта";
+            var originalString = "I want to see this! Я тут уже";
 
             var convertedNumber = NumberStringEqualizer.StringToBigIntegerEquivalent(originalString);
 
@@ -62,7 +62,7 @@ namespace RSALab.DebugConsole
 
         static void LogNumericEncryptionDecryption()
         {
-            BigInteger originalNumber = 100;
+            BigInteger originalNumber = 123456789;
 
             var rsaKeyPair = RSAKeyPairGenerator.GenerateRSAKeyPair();
 
