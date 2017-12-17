@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoLab3", "CryptoLab3\CryptoLab3.csproj", "{2BAC5AC2-4A77-406E-90D0-D16B9E93E4E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSALab.UI", "CryptoLab3\RSALab.UI.csproj", "{2BAC5AC2-4A77-406E-90D0-D16B9E93E4E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSALab.DebugConsole", "Lab3DebugConsole\RSALab.DebugConsole.csproj", "{28F0291B-EB73-4D2B-87FF-9B857E88460C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSALab.Implementation", "RSALab.Implementation\RSALab.Implementation.csproj", "{5C951145-929A-4D3F-AE4D-01E47CC81CD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{2BAC5AC2-4A77-406E-90D0-D16B9E93E4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BAC5AC2-4A77-406E-90D0-D16B9E93E4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BAC5AC2-4A77-406E-90D0-D16B9E93E4E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F0291B-EB73-4D2B-87FF-9B857E88460C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F0291B-EB73-4D2B-87FF-9B857E88460C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F0291B-EB73-4D2B-87FF-9B857E88460C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F0291B-EB73-4D2B-87FF-9B857E88460C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C951145-929A-4D3F-AE4D-01E47CC81CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C951145-929A-4D3F-AE4D-01E47CC81CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C951145-929A-4D3F-AE4D-01E47CC81CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C951145-929A-4D3F-AE4D-01E47CC81CD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
