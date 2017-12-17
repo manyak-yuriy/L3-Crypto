@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using NLog;
 using System.Windows;
 
 namespace CryptoLab3
@@ -13,5 +8,16 @@ namespace CryptoLab3
     /// </summary>
     public partial class App : Application
     {
+        private static Logger logger = LogManager.GetCurrentClassLogger();
+
+        public App()
+        {
+            logger.Info("Crypto UI has started.");
+
+            Exit += delegate
+            {
+                logger.Info("Crypto UI has finished.");
+            };
+        }
     }
 }
