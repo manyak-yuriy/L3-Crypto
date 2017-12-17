@@ -56,7 +56,7 @@
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="DebugConsoleLogs\2017-12-17-14-43.log" />
+    <None Include="DebugConsoleLogs\**" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>

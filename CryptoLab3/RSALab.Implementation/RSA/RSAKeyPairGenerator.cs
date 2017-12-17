@@ -43,6 +43,15 @@ namespace RSALab.Implementation
             var d = ExtendedGCD.ModInverse(e, eulerFuncValue);
 
             _logger.Info("d={0}", d);
+            
+            /*
+            var checkRes = BigInteger.Multiply(d, e);
+
+
+            checkRes = BigInteger.Remainder(checkRes, eulerFuncValue);
+
+            _logger.Info("Check: {0}", checkRes);
+            */
 
             var publicKey = new RSAPublicKey(n, e);
             var privateKey = new RSAPrivateKey(n, d);

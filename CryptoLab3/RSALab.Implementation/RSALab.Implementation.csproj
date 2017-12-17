@@ -45,11 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BigIntegerRandomGenerator.cs" />
-    <Compile Include="ExtendedGCD.cs" />
-    <Compile Include="MillerRabinTestExtensions.cs" />
+    <Compile Include="RandomNumbers\BigIntegerRandomGenerator.cs" />
+    <Compile Include="RSA\ExtendedGCD.cs" />
+    <Compile Include="RandomNumbers\MillerRabinTestExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RSAKeyPairGenerator.cs" />
+    <Compile Include="RSA\RSAKeyPairGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
