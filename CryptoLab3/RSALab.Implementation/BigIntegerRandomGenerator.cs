@@ -4,7 +4,7 @@ using NLog;
 
 namespace RSALab.Implementation
 {
-    public static class BigIntegerRandom
+    public static class BigIntegerRandomGenerator
     {
         private const int DefaultBitness = 256;
 

@@ -56,12 +56,17 @@
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="DebugConsoleLogs\2017-12-17-14-43.log" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RSALab.Contracts\RSALab.Contracts.csproj">
+      <Project>{3895DC8D-DA19-4EAC-BBFD-FB0050EF6A4E}</Project>
+      <Name>RSALab.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RSALab.Implementation\RSALab.Implementation.csproj">
       <Project>{5c951145-929a-4d3f-ae4d-01e47cc81cd5}</Project>
       <Name>RSALab.Implementation</Name>

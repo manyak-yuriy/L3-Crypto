@@ -21,15 +21,20 @@ namespace Lab3DebugConsole
 
             for (int i = 0; i < 20; i++)
             {
-                bigRandomPrime = BigIntegerRandom.GetBigRandomPrime();
+                bigRandomPrime = BigIntegerRandomGenerator.GetBigRandomPrime();
 
                 _logger.Info("Big random prime number: {0}", bigRandomPrime);
             }
         }
 
+        static void LogRSAKeyPairGeneration()
+        {
+            var keyPair = RSAKeyPairGenerator.GenerateRSAKeyPair();
+        }
+
         static void Main(string[] args)
         {
-            LogGeneratorPerfomace();
+            LogRSAKeyPairGeneration();
 
             Console.ReadKey();
         }

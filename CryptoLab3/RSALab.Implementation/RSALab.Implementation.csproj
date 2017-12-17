@@ -45,9 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BigIntegerRandom.cs" />
-    <Compile Include="MillerRabinTest.cs" />
+    <Compile Include="BigIntegerRandomGenerator.cs" />
+    <Compile Include="ExtendedGCD.cs" />
+    <Compile Include="MillerRabinTestExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RSAKeyPairGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
