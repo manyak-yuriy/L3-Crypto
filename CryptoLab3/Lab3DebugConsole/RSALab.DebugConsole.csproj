@@ -72,6 +72,10 @@
       <Project>{5c951145-929a-4d3f-ae4d-01e47cc81cd5}</Project>
       <Name>RSALab.Engine.Implementation</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RSALab.UserProtocol.Implementation\RSALab.UserProtocol.Implementation.csproj">
+      <Project>{928FB880-B9AD-4C12-9376-5DC6DAD28011}</Project>
+      <Name>RSALab.UserProtocol.Implementation</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RSALab.UserProtocol\RSALab.UserProtocol.Contracts.csproj">
       <Project>{c8b6189b-c390-47dc-ac82-10eb80c5d96e}</Project>
       <Name>RSALab.UserProtocol.Contracts</Name>

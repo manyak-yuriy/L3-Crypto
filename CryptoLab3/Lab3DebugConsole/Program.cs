@@ -9,7 +9,7 @@ namespace RSALab.DebugConsole
 
         static void Main(string[] args)
         {
-            LogNumericEncryptionDecryption();
+            SendRecieveMessageWithSignatureValidation();
 
             Console.ReadKey();
         }

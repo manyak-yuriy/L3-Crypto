@@ -35,6 +35,7 @@ namespace RSALab.Implementation.RSA
         }
         #endregion
 
+        #region Numeric Encryption / Decryption
         public static BigInteger Encrypt(BigInteger originalNumber, RSAPublicKey publicKey)
         {
             BigInteger encryptedNumber = BigInteger.ModPow(originalNumber, publicKey.E, publicKey.N);
@@ -45,8 +46,23 @@ namespace RSALab.Implementation.RSA
         public static BigInteger Decrypt(BigInteger encryptedMessage, RSAPrivateKey privateKey)
         {
             BigInteger originalNumber = BigInteger.ModPow(encryptedMessage, privateKey.D, privateKey.N);
-            
+
             return originalNumber;
+        } 
+        #endregion
+
+        public static BigInteger CreateSignature(BigInteger originalNumber, RSAPrivateKey privateKey)
+        {
+            BigInteger signature = BigInteger.ModPow(originalNumber, privateKey.D, privateKey.N);
+
+            return signature;
+        }
+
+        public static bool CheckSignatureIsValid(BigInteger originalNumber, BigInteger decryptedSignature, RSAPublicKey publicKey)
+        {
+            bool isValid = BigInteger.ModPow(originalNumber, publicKey.E, publicKey.N) == originalNumber;
+
+            return isValid;
         }
     }
 }

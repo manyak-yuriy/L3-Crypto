@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using RSALab.Implementation;
 using RSALab.Implementation.Converters;
 using RSALab.Implementation.RSA;
+using RSALab.UserProtocol;
+using RSALab.UserProtocol.Implementation;
 
 namespace RSALab.DebugConsole
 {
@@ -62,7 +64,7 @@ namespace RSALab.DebugConsole
 
         static void LogNumericEncryptionDecryption()
         {
-            BigInteger originalNumber = 123456789;
+            BigInteger originalNumber = BigInteger.Parse("12345678987654321123456789");
 
             var rsaKeyPair = RSAKeyPairGenerator.GenerateRSAKeyPair();
 
@@ -77,6 +79,17 @@ namespace RSALab.DebugConsole
 
             _logger.Info("Decrypting numbers...");
             _logger.Info("  Encrypted number: {0}  \n  Original number: {1}", encryptedNumber, originalNumber);
+        }
+
+        static void SendRecieveMessageWithSignatureValidation()
+        {
+            IUser sender = new User("Sender");
+
+            IUser receiver = new User("Receiver");
+
+            BigInteger messageContents = 123456;
+
+            sender.SendMessageTo(receiver, messageContents);
         }
     }
 }
