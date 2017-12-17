@@ -102,6 +102,7 @@
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Logs\2017-12-17.log" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
