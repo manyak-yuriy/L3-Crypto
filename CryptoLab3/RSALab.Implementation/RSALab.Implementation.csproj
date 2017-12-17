@@ -45,10 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\NumberStringEqualizer.cs" />
     <Compile Include="RandomNumbers\BigIntegerRandomGenerator.cs" />
     <Compile Include="RSA\ExtendedGCD.cs" />
     <Compile Include="RandomNumbers\MillerRabinTestExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RSA\RSACryptoSystem.cs" />
     <Compile Include="RSA\RSAKeyPairGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
