@@ -117,9 +117,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RSALab.Implementation\RSALab.Implementation.csproj">
+    <ProjectReference Include="..\RSALab.Contracts\RSALab.Engine.Contracts.csproj">
+      <Project>{3895dc8d-da19-4eac-bbfd-fb0050ef6a4e}</Project>
+      <Name>RSALab.Engine.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RSALab.Implementation\RSALab.Engine.Implementation.csproj">
       <Project>{5c951145-929a-4d3f-ae4d-01e47cc81cd5}</Project>
-      <Name>RSALab.Implementation</Name>
+      <Name>RSALab.Engine.Implementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RSALab.UserProtocol\RSALab.UserProtocol.Contracts.csproj">
+      <Project>{c8b6189b-c390-47dc-ac82-10eb80c5d96e}</Project>
+      <Name>RSALab.UserProtocol.Contracts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

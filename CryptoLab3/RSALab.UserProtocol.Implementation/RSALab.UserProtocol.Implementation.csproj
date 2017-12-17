@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{28F0291B-EB73-4D2B-87FF-9B857E88460C}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{928FB880-B9AD-4C12-9376-5DC6DAD28011}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lab3DebugConsole</RootNamespace>
-    <AssemblyName>Lab3DebugConsole</AssemblyName>
+    <RootNamespace>RSALab.UserProtocol.Implementation</RootNamespace>
+    <AssemblyName>RSALab.UserProtocol.Implementation</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,13 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,29 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PerfomaceLogTesting.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <Content Include="NLog.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <None Include="DebugConsoleLogs\**" />
-    <None Include="NLog.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="packages.config" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RSALab.Contracts\RSALab.Engine.Contracts.csproj">
-      <Project>{3895DC8D-DA19-4EAC-BBFD-FB0050EF6A4E}</Project>
+      <Project>{3895dc8d-da19-4eac-bbfd-fb0050ef6a4e}</Project>
       <Name>RSALab.Engine.Contracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RSALab.Implementation\RSALab.Engine.Implementation.csproj">
-      <Project>{5c951145-929a-4d3f-ae4d-01e47cc81cd5}</Project>
-      <Name>RSALab.Engine.Implementation</Name>
     </ProjectReference>
     <ProjectReference Include="..\RSALab.UserProtocol\RSALab.UserProtocol.Contracts.csproj">
       <Project>{c8b6189b-c390-47dc-ac82-10eb80c5d96e}</Project>

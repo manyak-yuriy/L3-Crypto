@@ -57,9 +57,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RSALab.Contracts\RSALab.Contracts.csproj">
+    <ProjectReference Include="..\RSALab.Contracts\RSALab.Engine.Contracts.csproj">
       <Project>{3895dc8d-da19-4eac-bbfd-fb0050ef6a4e}</Project>
-      <Name>RSALab.Contracts</Name>
+      <Name>RSALab.Engine.Contracts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

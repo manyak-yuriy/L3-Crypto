@@ -7,14 +7,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSALab.UI", "CryptoLab3\RSA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSALab.DebugConsole", "Lab3DebugConsole\RSALab.DebugConsole.csproj", "{28F0291B-EB73-4D2B-87FF-9B857E88460C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSALab.Implementation", "RSALab.Implementation\RSALab.Implementation.csproj", "{5C951145-929A-4D3F-AE4D-01E47CC81CD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSALab.Engine.Implementation", "RSALab.Implementation\RSALab.Engine.Implementation.csproj", "{5C951145-929A-4D3F-AE4D-01E47CC81CD5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{49A0900F-28B8-4368-A3F2-2AFF29627258}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSALab.Contracts", "RSALab.Contracts\RSALab.Contracts.csproj", "{3895DC8D-DA19-4EAC-BBFD-FB0050EF6A4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSALab.Engine.Contracts", "RSALab.Contracts\RSALab.Engine.Contracts.csproj", "{3895DC8D-DA19-4EAC-BBFD-FB0050EF6A4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSALab.UserProtocol.Contracts", "RSALab.UserProtocol\RSALab.UserProtocol.Contracts.csproj", "{C8B6189B-C390-47DC-AC82-10EB80C5D96E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSALab.UserProtocol.Implementation", "RSALab.UserProtocol.Implementation\RSALab.UserProtocol.Implementation.csproj", "{928FB880-B9AD-4C12-9376-5DC6DAD28011}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserProtocol", "UserProtocol", "{06BFDFF6-349E-4973-9EBB-EF2CE5D39003}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RSAEngine", "RSAEngine", "{B0D3C1A6-5300-4C7C-A671-46B5EED79A3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,8 +46,22 @@ Global
 		{3895DC8D-DA19-4EAC-BBFD-FB0050EF6A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3895DC8D-DA19-4EAC-BBFD-FB0050EF6A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3895DC8D-DA19-4EAC-BBFD-FB0050EF6A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B6189B-C390-47DC-AC82-10EB80C5D96E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B6189B-C390-47DC-AC82-10EB80C5D96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B6189B-C390-47DC-AC82-10EB80C5D96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B6189B-C390-47DC-AC82-10EB80C5D96E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{928FB880-B9AD-4C12-9376-5DC6DAD28011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{928FB880-B9AD-4C12-9376-5DC6DAD28011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{928FB880-B9AD-4C12-9376-5DC6DAD28011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{928FB880-B9AD-4C12-9376-5DC6DAD28011}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C951145-929A-4D3F-AE4D-01E47CC81CD5} = {B0D3C1A6-5300-4C7C-A671-46B5EED79A3D}
+		{3895DC8D-DA19-4EAC-BBFD-FB0050EF6A4E} = {B0D3C1A6-5300-4C7C-A671-46B5EED79A3D}
+		{C8B6189B-C390-47DC-AC82-10EB80C5D96E} = {06BFDFF6-349E-4973-9EBB-EF2CE5D39003}
+		{928FB880-B9AD-4C12-9376-5DC6DAD28011} = {06BFDFF6-349E-4973-9EBB-EF2CE5D39003}
 	EndGlobalSection
 EndGlobal

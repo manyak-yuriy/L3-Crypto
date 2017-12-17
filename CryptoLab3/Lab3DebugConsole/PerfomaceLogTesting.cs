@@ -66,6 +66,7 @@ namespace RSALab.DebugConsole
 
             var rsaKeyPair = RSAKeyPairGenerator.GenerateRSAKeyPair();
 
+
             var encryptedNumber = RSACryptoSystem.Encrypt(originalNumber, rsaKeyPair.Public);
 
             _logger.Info("Encrypting numbers...");
