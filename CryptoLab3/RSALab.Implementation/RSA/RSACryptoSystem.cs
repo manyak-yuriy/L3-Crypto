@@ -60,7 +60,7 @@ namespace RSALab.Implementation.RSA
 
         public static bool CheckSignatureIsValid(BigInteger originalNumber, BigInteger decryptedSignature, RSAPublicKey publicKey)
         {
-            bool isValid = BigInteger.ModPow(originalNumber, publicKey.E, publicKey.N) == originalNumber;
+            bool isValid = BigInteger.ModPow(decryptedSignature, publicKey.E, publicKey.N) == originalNumber;
 
             return isValid;
         }
