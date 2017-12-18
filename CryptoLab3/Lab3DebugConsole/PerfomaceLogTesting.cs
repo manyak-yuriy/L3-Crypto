@@ -83,10 +83,15 @@ namespace RSALab.DebugConsole
 
         static void SendRecieveMessageWithSignatureValidation()
         {
-            IUser sender = new User("Sender");
+            IUser sender;
+            IUser receiver;
 
-            IUser receiver = new User("Receiver");
-
+            do
+            {
+                sender = new User("Sender");
+                receiver = new User("Receiver");
+            } while (sender.PublicKey.N > receiver.PublicKey.N);
+            
             BigInteger messageContents = 123456;
 
             sender.SendMessageTo(receiver, messageContents);

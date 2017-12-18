@@ -17,7 +17,8 @@ namespace RSALab.Implementation
 
             var eulerFuncValue = BigInteger.Multiply(p - 1, q - 1);
 
-            var e = BigInteger.Pow(2, 16) + 1;
+            //var e = BigInteger.Pow(2, 16) + 1;
+            var e = eulerFuncValue;
 
             while (true)
             {
