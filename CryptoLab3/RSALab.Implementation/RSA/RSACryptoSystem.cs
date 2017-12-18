@@ -53,14 +53,18 @@ namespace RSALab.Implementation.RSA
 
         public static BigInteger CreateSignature(BigInteger originalNumber, RSAPrivateKey privateKey)
         {
-            BigInteger signature = BigInteger.ModPow(originalNumber, privateKey.D, privateKey.N);
+            var originalNumberHashValue = originalNumber.GetHashCode();
+
+            BigInteger signature = BigInteger.ModPow(originalNumberHashValue, privateKey.D, privateKey.N);
 
             return signature;
         }
 
         public static bool CheckSignatureIsValid(BigInteger originalNumber, BigInteger decryptedSignature, RSAPublicKey publicKey)
         {
-            bool isValid = BigInteger.ModPow(decryptedSignature, publicKey.E, publicKey.N) == originalNumber;
+            var originalNumberHashValue = originalNumber.GetHashCode();
+
+            bool isValid = BigInteger.ModPow(decryptedSignature, publicKey.E, publicKey.N) == originalNumberHashValue;
 
             return isValid;
         }
